@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube Channels</title>
+</head>
+<body>
+<h1>Youtube Channels:</h1>
+    {% for channel in channels %}
+        - {{ channel.channel_id }}, {{ channel.channel_url }}, {{ channel.channel_title }}<br>
+    {% endfor %}
+</body>
+</html>
